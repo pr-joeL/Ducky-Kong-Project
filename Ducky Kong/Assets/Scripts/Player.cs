@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float groundDeceleration = 12;
     [SerializeField] private float airAcceleration = 12;
     [SerializeField] private float airDeceleration = 12;
+    [SerializeField] private float groundGravity = 9.8f;
+    [SerializeField] private float airGravity = 9.8f;
+    [SerializeField] private float jumpVelocity = 60f;
 
     [SerializeField] private LayerMask _groundLayer;
 
@@ -26,6 +29,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1.2f;
         _isFacingRight = false;
 
         _rb = GetComponent<Rigidbody2D>();
@@ -35,12 +39,14 @@ public class Player : MonoBehaviour
     void Update()
     {
         input.x = Input.GetAxis("Horizontal");
+        HandleJump();
     }
     private void FixedUpdate()
     {
         CollisionCheck();
-
-        if(_isGrounded )
+        HandleGravity();
+        
+        if (_isGrounded )
         {
             Move(groundAcceleration, groundDeceleration, input);
         }
@@ -60,7 +66,6 @@ public class Player : MonoBehaviour
             _moveVelocity = Vector2.Lerp(_moveVelocity, targetVelocity, acceleration * Time.fixedDeltaTime);
             _rb.linearVelocity = new Vector2(_moveVelocity.x, _moveVelocity.y);
         }
-
         else if(moveInput == Vector2.zero)
         {
             _moveVelocity = Vector2.Lerp(_moveVelocity, Vector2.zero, deceleration * Time.fixedDeltaTime);
@@ -127,5 +132,29 @@ public class Player : MonoBehaviour
     private void CollisionCheck()
     {
         IsGrounded();
+    }
+
+    private void HandleJump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if(_isGrounded)
+            {
+                _moveVelocity.y += jumpVelocity;
+            }
+        }
+    }
+
+    private void HandleGravity()
+    {
+        if (_isGrounded)
+        {
+            if (_moveVelocity.y < 0f)
+                _moveVelocity.y = 0f;
+        }
+        else
+        {
+            _moveVelocity.y -= airGravity * Time.fixedDeltaTime;
+        }
     }
 }
