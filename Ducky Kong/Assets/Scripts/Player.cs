@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            Move(airAcceleration, airDeceleration, input);
+            Move(airAcceleration, airDeceleration, new Vector2(input.x * 0.7f, input.y));
         }
     }
 
