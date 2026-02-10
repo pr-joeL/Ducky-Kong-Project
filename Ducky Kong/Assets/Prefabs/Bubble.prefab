@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2366281324471420590}
   - component: {fileID: 721207741697638837}
   - component: {fileID: 2352958606700406318}
+  - component: {fileID: 7709680744979292041}
   m_Layer: 6
   m_Name: Bubble
   m_TagString: Untagged
@@ -142,7 +143,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1000000
-  m_LinearDamping: 0.29
+  m_LinearDamping: 0.2
   m_AngularDamping: 0.06
   m_GravityScale: 4
   m_Material: {fileID: 6200000, guid: 28da032425be39f4a85a98a2425bc685, type: 2}
@@ -156,6 +157,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &7709680744979292041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502275032352696638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877aed9a714630c4a88c914e328c207f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Despawner
+  despawnOnStart: 1
+  despawnTimer: 30
 --- !u!1001 &3696906787291331390
 PrefabInstance:
   m_ObjectHideFlags: 0
