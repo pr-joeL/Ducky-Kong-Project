@@ -911,14 +911,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 3.3
-  groundCheckLength: 0.025
   groundAcceleration: 3
-  groundDeceleration: 10
+  groundDeceleration: 8
   airAcceleration: 3
   airDeceleration: 3
-  groundGravity: 9.8
   airGravity: 36.4
-  jumpVelocity: 11
+  jumpVelocity: 8.6
+  groundCheckLength: 0.025
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
