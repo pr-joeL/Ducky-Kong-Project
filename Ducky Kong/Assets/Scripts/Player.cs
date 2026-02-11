@@ -133,6 +133,7 @@ public class Player : MonoBehaviour
         {
             _isClimbing = false;
         }
+        Debug.Log("Climbing Y: " + _moveVelocity.y);
     }
 
     private void HandleJump()
