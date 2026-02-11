@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BubbleSpawner
   bubblePrefab: {fileID: 7502275032352696638, guid: 5e69b5bfdfe5e2d4cbfec62ca7152117, type: 3}
-  bubbleDelayTimeMinimum: 2
+  bubbleDelayTimeMinimum: 1.5
   bubbleDelayTimeMaximum: 4.5
 --- !u!1 &683993271
 GameObject:
@@ -4402,6 +4402,14 @@ PrefabInstance:
     - target: {fileID: 7386784586814444948, guid: 882f9a159b080d246b584b044e3a494a, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076082154247967147, guid: 882f9a159b080d246b584b044e3a494a, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1107466
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076082154247967147, guid: 882f9a159b080d246b584b044e3a494a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.15605323
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
