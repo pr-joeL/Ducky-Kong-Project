@@ -55,6 +55,16 @@ public class Player : MonoBehaviour
             _jumpRequested = true;
     }
 
+    public void ExitLadder()
+    {
+
+        if (_isGrounded && input.y < 0)
+        {
+            _isClimbing = false;
+            return;
+        }
+    }
+
     private void FixedUpdate()
     {
         // Sync with real Rigidbody velocity FIRST
@@ -64,6 +74,7 @@ public class Player : MonoBehaviour
 
         if (_isClimbing)
         {
+            
             HandleClimbing();
         }
         else
@@ -100,13 +111,13 @@ public class Player : MonoBehaviour
     {
         gameObject.layer = 9;
 
-        // Exit ladder at bottom
-        if (_isGrounded && input.y <= 0)
+
+        // Exit if no longer touching ladder
+        if (!_isOnLadder)
         {
             _isClimbing = false;
             return;
         }
-
         _moveVelocity.y = input.y * climbSpeed;
         _moveVelocity.x = 0f;
 
