@@ -5,6 +5,9 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rb;
     private BoxCollider2D _feetCol;
 
+    public int lives = 3;
+    public GameObject[] hearts;
+
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 12f;
     [SerializeField] private float groundAcceleration = 12f;
@@ -30,6 +33,7 @@ public class Player : MonoBehaviour
     private Vector2 _moveVelocity;
     private Vector2 input;
 
+    private bool _dead;
     private bool _isGrounded;
     private bool _isFacingRight;
     private bool _jumpRequested;
@@ -38,8 +42,9 @@ public class Player : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _feetCol = GetComponent<BoxCollider2D>();
-
+        lives = 3;
         _rb.gravityScale = 0f; // We handle gravity manually
+        UpdateHeartUI(lives);
     }
 
     private void Update()
@@ -86,6 +91,52 @@ public class Player : MonoBehaviour
 
         // Apply final velocity ONCE
         _rb.linearVelocity = _moveVelocity;
+    }
+
+    public void LoseLife()
+    {
+        if(_dead) return;
+
+        lives--;
+        UpdateHeartUI(lives);
+        if (lives <= 0)
+        {
+            _dead = true;
+            Debug.Log("Player Lost");
+            GameObject.FindObjectOfType<PauseMenu>().LoseGame();
+        }
+    }
+
+    private void UpdateHeartUI(int livesNum)
+    {
+        switch (livesNum)
+        {
+            case 3:
+                hearts[0].SetActive(true);
+                hearts[1].SetActive(true);
+                hearts[2].SetActive(true);
+                break;
+            case 2:
+                hearts[0].SetActive(true);
+                hearts[1].SetActive(true);
+                hearts[2].SetActive(false);
+                break;
+            case 1:
+                hearts[0].SetActive(true);
+                hearts[1].SetActive(false);
+                hearts[2].SetActive(false);
+                break;
+            case 0:
+                hearts[0].SetActive(false);
+                hearts[1].SetActive(false);
+                hearts[2].SetActive(false);
+                break;
+            default:
+                hearts[0].SetActive(false);
+                hearts[1].SetActive(false);
+                hearts[2].SetActive(false);
+                break;
+        }
     }
 
     private void HandleMovement()
