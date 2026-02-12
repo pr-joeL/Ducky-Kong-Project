@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a5a4ef430608835408afb067bc36b3d4
+guid: 79cc7b73c28c472499b748efebbad90b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Pegasus
+  - name: Sprite-0005
     originalName: 
-    pivot: {x: 0.8137653, y: -1.8737864}
+    pivot: {x: 0.4950495, y: -0.11727617}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 247
-      height: 206
-    spriteID: e6b031962cd610f469ebbb7b1595ab0b
+      width: 1616
+      height: 793
+    spriteID: 7e154eccde24ec849a04ac8b2f92841e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1644659478
+      value0: 4228612821
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Pegasus
+    name: Sprite-0005
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Pegasus
+    - name: Sprite-0005
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 759
-        y: 386
-        width: 247
-        height: 206
-      spriteId: e6b031962cd610f469ebbb7b1595ab0b
+        x: 160
+        y: 93
+        width: 1616
+        height: 793
+      spriteId: 7e154eccde24ec849a04ac8b2f92841e
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -182,4 +182,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 1920, y: 1080}
-  previousTextureSize: {x: 256, y: 256}
+  previousTextureSize: {x: 2048, y: 1024}

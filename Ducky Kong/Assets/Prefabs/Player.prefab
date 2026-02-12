@@ -349,6 +349,10 @@ PrefabInstance:
       value: Pegasus
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 79cc7b73c28c472499b748efebbad90b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6255371815494791725, guid: a5a4ef430608835408afb067bc36b3d4, type: 3}
+    - target: {fileID: 3626916397498700004, guid: 79cc7b73c28c472499b748efebbad90b, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
