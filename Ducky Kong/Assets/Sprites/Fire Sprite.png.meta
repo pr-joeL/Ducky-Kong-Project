@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1cc0fe65c8710df468f6c8bece0e831a
+guid: 54f57200b60ea2d4fb7b068e1477bffd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6992824647962385170
-    second: Pegasus Life Icon Transparent_0
+      213: 385197209139625459
+    second: Fire Sprite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pegasus Life Icon Transparent_0
+      name: Fire Sprite_0
       rect:
         serializedVersion: 2
-        x: 897
-        y: 483
-        width: 161
-        height: 100
+        x: 13
+        y: 37
+        width: 88
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee42b91480f74fe90800000000000000
-      internalID: -6992824647962385170
+      spriteID: 3fd3d3322de785500800000000000000
+      internalID: 385197209139625459
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pegasus Life Icon Transparent_0: -6992824647962385170
+      Fire Sprite_0: 385197209139625459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

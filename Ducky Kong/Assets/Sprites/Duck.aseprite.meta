@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5350064d94ab3684f86a929ace0e26d7
+guid: 4947801f92a39a44e9f06d92d0fc66fc
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Sprite-0001
+  - name: Duck
     originalName: 
     pivot: {x: 1.5391304, y: -0.5}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 460
       height: 580
-    spriteID: 1abe5abde1eccfe4ab43b207025a2c84
+    spriteID: 6f8c2aef836e96a42ae3af27d33887c2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,17 +153,17 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 4228612825
+      value0: 177541161
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Sprite-0001
+    name: Duck
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Sprite-0001
+    - name: Duck
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,7 +171,7 @@ ScriptedImporter:
         y: 290
         width: 460
         height: 580
-      spriteId: 1abe5abde1eccfe4ab43b207025a2c84
+      spriteId: 6f8c2aef836e96a42ae3af27d33887c2
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
