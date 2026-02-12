@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d441ad1560519a54cb3d8a7f163f163d
+guid: e93f196131366d04b945475455271692
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Bubble Sprite
+  - name: Sprite-0005
     originalName: 
-    pivot: {x: 2.3064513, y: -10.979167}
+    pivot: {x: 0.4950495, y: -0.11727617}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 62
-      height: 48
-    spriteID: 9ccf6c76a503e9a4fb50e037a3b65f46
+      width: 1616
+      height: 793
+    spriteID: d0e2636a50ece1e4ca9299ac01169f0f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1608444223
+      value0: 4228612821
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Bubble Sprite
+    name: Sprite-0005
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Bubble Sprite
+    - name: Sprite-0005
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 817
-        y: 527
-        width: 62
-        height: 48
-      spriteId: 9ccf6c76a503e9a4fb50e037a3b65f46
+        x: 160
+        y: 93
+        width: 1616
+        height: 793
+      spriteId: d0e2636a50ece1e4ca9299ac01169f0f
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -182,4 +182,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 1920, y: 1080}
-  previousTextureSize: {x: 128, y: 64}
+  previousTextureSize: {x: 2048, y: 1024}
