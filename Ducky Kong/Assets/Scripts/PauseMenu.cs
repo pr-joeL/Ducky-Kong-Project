@@ -27,6 +27,7 @@ public class PauseMenu : MonoBehaviour
     {
 
         ResumeGame();
+        GameObject.Find("Music").SetActive(false);
         lost = true;
         paused = true;
         Time.timeScale = 0f;
@@ -39,6 +40,7 @@ public class PauseMenu : MonoBehaviour
     {
 
         ResumeGame();
+        GameObject.Find("Music").SetActive(false);
         won = true;
         paused = true;
         Time.timeScale = 0f;

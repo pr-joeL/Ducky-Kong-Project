@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float climbSpeed = 6f;
     [SerializeField] private LayerMask ladderLayer;
 
+    public AudioClip jump;
+    private AudioSource audioSource;
     private bool _isOnLadder;
     private bool _isClimbing;
 
@@ -42,6 +44,7 @@ public class Player : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _feetCol = GetComponent<BoxCollider2D>();
+        audioSource = GetComponent<AudioSource>();
         lives = 3;
         _rb.gravityScale = 0f; // We handle gravity manually
         UpdateHeartUI(lives);
@@ -203,8 +206,9 @@ public class Player : MonoBehaviour
         if (_jumpRequested && _isGrounded)
         {
             _moveVelocity.y = jumpVelocity;
+            audioSource.PlayOneShot(jump);
         }
-
+        
         _jumpRequested = false;
     }
 
